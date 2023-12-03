@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imgs/NBABG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+header .header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    max-width: 80em;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color:rgb(216, 13, 13);
+    margin: 5px auto;
+}
+
+header .logo{
+    display: flex;
+    gap: 15px;
+}
+
+header .logo img{
+    width: 50px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+header .logo h2{
+    color: rgb(216, 13, 13);
+}
+header .logo p{
+    color: white;
+}
+
+nav{
+    display: flex;
+    padding-top: 15px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 50px;
+}
+
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navlinks a:hover{
+    color: rgb(216, 13, 13);
+}
+
+.home{
+    margin: 200px auto;
+    display: flex;
+    align-items: center;
+}   
+
+.home .homeImg{
+    width: 50%;
+}
+
+.home .homeImg img{
+    width: 300px;
+}
+
+.home .homeContent{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 40px;
+    color: white;
+}
+
+.home .homeContent h1{
+    font-size: 50px;
+}
+
+.home .moreBtn button{
+    font-size: 15px;
+    padding: 10px 30px;
+    border: none;
+    outline: 2px solid rgb(216, 13, 13);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home .moreBtn button:hover{
+    background-color: rgb(216, 13, 13);
+}
+
+section{
+    margin: 0 auto;
+}
+
+.about{
+    max-width: 80em;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.aboutImg{
+    margin: 0 auto;
+} 
+
+.aboutImg img{
+    width: 40%;
+    outline: 3px solid rgb(216, 13, 13);
+    padding: 20px;
+}
+
+.aboutImg img{
+    width: 400px;
+}
+
+.aboutContent{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.aboutContent h1{
+    font-size: 40px;
+    position: relative;
+}
+
+.aboutContent h1::after{
+    content: '';
+    width: 130px;
+    height: 1px;
+    background-color: rgb(216, 13, 13);
+    position: absolute;
+    bottom: 50%;
+    left: 170px;
+}
+
+.aboutContent .aboutFont{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.aboutContent .aboutFont i{
+    font-size: 50px;
+    color: grey;
+}
+
+.aboutContent .aboutFont p{
+    line-height: 30px;
+}
+
+.players{
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+.playerTitle{
+    width: 100%;
+    background-color: #1E1E1E;
+    padding: 50px;
+}
+
+.playerTitle h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    color: white;
+}
+
+.playerTitle h1::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: rgb(216, 13, 13);
+    position: absolute;
+    bottom: -5px;
+}
+
+
+.jordan,
+.lebron,
+.kobe,
+.kareem{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 200px auto;
+}
+
+.jordan p,
+.lebron p,
+.kobe p,
+.kareem p{
+    line-height: 1.5;
+}
+
+.jordanImg,
+.kobeImg{
+    width: 50%;
+}
+
+.lebronImg,
+.kareemImg{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jordanImg img,
+.lebronImg img,
+.kobeImg img,
+.kareemImg img{
+    width: 300px;
+    border-radius: 12px;
+}
+
+.jordanContent,
+.lebronContent,
+.kobeContent,
+.kareemContent{
+    width: 50%;
+}
+
+.jordanContent h1,
+.lebronContent h1,
+.kobeContent h1,
+.kareemContent h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.jordanContent h1::after{
+    content: '';
+    width: 130px;
+    height: 1px;
+    background-color: rgb(216, 13, 13);
+    position: absolute;
+    bottom: 50%;
+    left: 270px;
+}
+
+.lebronContent h1::after{
+    content: '';
+    width: 130px;
+    height: 1px;
+    background-color: rgb(216, 13, 13);
+    position: absolute;
+    bottom: 50%;
+    left: 260px;
+}
+
+.kobeContent h1::after{
+    content: '';
+    width: 130px;
+    height: 1px;
+    background-color: rgb(216, 13, 13);
+    position: absolute;
+    bottom: 50%;
+    left: 230px;
+}
+
+.kareemContent h1::after{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: rgb(216, 13, 13);
+    position: absolute;
+    bottom: 50%;
+    left: 370px;
+}
+
+#historyBtn,
+#historyBtn2,
+#historyBtn3,
+#historyBtn4{
+    font-size: 15px;
+    padding: 10px 30px;
+    border: none;
+    outline: 2px solid rgb(216, 13, 13);
+    background-color: transparent;
+    color: rgb(216, 13, 13);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+#historyBtn:hover,
+#historyBtn2:hover,
+#historyBtn3:hover,
+#historyBtn4:hover{
+    background-color: rgb(216, 13, 13);
+    color: white;
+}
+
+.history,
+.history2,
+.history3,
+.history4{
+    font-size: 14px;
+    padding-top: 20px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#less,
+#less2,
+#less3,
+#less4{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.scrollUp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 2px solid rgb(216, 13, 13);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: sticky;
+    bottom: 20px;
+}
+
+.scrollUp i{
+    font-size: 40px;
+    color: rgb(216, 13, 13);
+}
+
+@media (max-width: 520px){
+    .logoName{
+        display: none;
+    }
+    nav .close i{
+        color: black;
+    }
+    nav .navlinks{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        background-color: white;
+        width: 50%;
+        text-align: center;
+        height: 100vh;
+        line-height: 4;
+        z-index: 999;
+    }
+    nav .navlinks .close{
+        display: flex;
+        justify-content: flex-end;
+        margin: 30px;
+    }
+    nav .navlinks .close i{
+        font-size: 30px;
+        color: rgb(216, 13, 13);
+    }
+    nav .navlinks a{
+        color: rgb(216, 13, 13);
+    }
+    .hamburger{
+        display: block;
+    }
+    header {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        background-image: url(Imgs/NBABG.jpg);
+        background-position: calc(70%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 80vh;
+        width: 100%;
+    }
+    .home .homeImg{
+        display: none;
+        width: 0;
+    }
+    .home .homeContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .home .homeContent h1{
+        font-size: 30px;
+        max-width: 80%;
+        text-align: center;
+    }
+    .home .homeContent p{
+        font-size: 13px;
+        max-width: 80%;
+        text-align: center;
+    }
+    .about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about .aboutImg img{
+        width: 250px;
+    }
+    .aboutContent{
+        width: 80%;
+    }
+    .aboutContent h1{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+        z-index: -999;
+    }
+    .aboutContent h1::after{
+        width: 30px;
+        left: 220px;
+    }
+    .aboutFont{
+        font-size: 13px;
+    }
+    .aboutContent .aboutFont i{
+        font-size: 30px;
+    }
+    .playerTitle{
+        padding: 20px;
+        
+    }
+    .playerTitle h1{
+        font-size: 20px;
+    }
+    .playerTitle h1::after{
+        z-index: -999;
+    }
+    .playerTitle h1::after{
+        width: 30px;
+    }
+    .jordan,
+    .lebron,
+    .kobe,
+    .kareem{
+        flex-direction: column;
+    }
+    .jordanImg,
+    .kobeImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lebronImg,
+    .kareemImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .jordanImg img,
+    .lebronImg img,
+    .kobeImg img,
+    .kareemImg img{
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    .jordanContent,
+    .lebronContent,
+    .kobeContent,
+    .kareemContent{
+        width: 100%;
+        order: 1;
+    }
+    .jordanContent h1,
+    .lebronContent h1,
+    .kobeContent h1,
+    .kareemContent h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: center;
+        z-index: -999;
+    }
+    .jordanContent p,
+    .lebronContent p,
+    .kobeContent p,
+    .kareemContent p{
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .jordanContent h1::after,
+    .lebronContent h1::after{
+        content: '';
+        width: 50px;
+    }
+    .kobeContent h1::after{
+        width: 50px;
+        left: 250px;
+    }
+    .kareemContent h1::after{
+        width: 50px;
+        left: 290px;
+    }
+    #historyBtn,
+    #historyBtn2,
+    #historyBtn3,
+    #historyBtn4{
+        font-size: 13px;
+        padding: 8px 25px;
+        border: none;
+        margin: auto;
+        display: flex;
+    }
+}
